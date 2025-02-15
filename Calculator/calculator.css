@@ -1,56 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.Container{
-    height: 100vh;
-    width: 100%;
-    background-color: #A4C1C2;
+body {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
-.Calculator{
-    padding: 40px;
-    background-color: #67797A;
-    border-radius: 20px;
-}
-
-.Calculator form input{
-    border: 0;
-    outline: 0;
-    color: white;
-    height: 60px;
-    width: 60px;
+.calculator {
+    background-color: #333;
     border-radius: 10px;
-    box-shadow: -2px -2px 8px #414848;
-    background: transparent;
-    cursor: pointer;
-    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 300px;
+    overflow: hidden;
 }
 
-.Calculator form .display input{
-    width:240px;
-    font-size: 2rem;
-    box-shadow: none;
+.display {
+    background-color: #222;
+    color: white;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 24px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.expression {
+    font-size: 14px;
+    color: #aaa;
+    min-height: 20px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.current-value {
+    font-size: 24px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
     padding: 10px;
-    padding-left: 10px;
-    margin-bottom: 15px;
 }
 
-.Calculator form .equal{
-    width:
-     120px;
+.btn {
+    padding: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-.Container h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px; /* Adds space between the title and calculator */
-    text-align: center;
+.btn:hover {
+    background-color: #555;
+}
+
+.btn.operator {
+    background-color: #ff9500;
+}
+
+.btn.operator:hover {
+    background-color: #ffaa33;
+}
+
+.btn.equal {
+    background-color: #ff9500;
+    grid-column: span 2;
+}
+
+.btn.clear {
+    background-color: #ff3b30;
+}
+
+.btn.clear:hover {
+    background-color: #ff6259;
 }
