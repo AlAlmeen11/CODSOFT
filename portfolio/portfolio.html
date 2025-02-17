@@ -3,9 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Al Ameen | Personal Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="icon" href="./asserts/icons/header_icon.png">
 </head>
 <body>
-    
+    <nav>
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span >Portfolio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Al Ameen</h1>
+                    <p>MERN Stack Developer</p>
+                    <p>B.Tech IT Student</p>
+                    <p>Passionate about creating innovative web solutions and learning new technologies.</p>
+                </div>
+                <div class="profile-container">
+                    <img src="./asserts/Images/profile_pic.jpg" alt="Profile_pic" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>MERN Stack (MongoDB, Express.js, React.js, Node.js)</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Databases</h3>
+                    <p>MongoDB, MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <p>Python, Java, JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="https://github.com/AlAlmeen11/CODSOFT/tree/main/Calculator">
+                        <img src="./asserts/Images/calculator_fv.png" alt="Calculator Project">
+                    </a>
+                    <div class="project-content">
+                        <h3>Calculator</h3>
+                        <p>A fully functional calculator application with basic arithmetic operations.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/AlAlmeen11/CODSOFT/tree/main/landing-page">
+                        <img src="./asserts/Images/landing_page_fv.png" alt="Travel Landing Page">
+                    </a>
+                    <div class="project-content">
+                        <h3>Travel Landing Page</h3>
+                        <p>A responsive travel website landing page with modern design elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate MERN stack developer currently pursuing B.Tech in Information Technology.
+                With expertise in multiple programming languages and databases, I strive to create efficient and
+                innovative solutions.</p>
+
+            <div class="education">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>B.Tech Information Technology</h4>
+                    <p>Currently Pursuing</p>
+                </div>
+                <div class="education-item">
+                    <h4>Higher Secondary</h4>
+                    <p>70%</p>
+                </div>
+                <div class="education-item">
+                    <h4>SSLC</h4>
+                    <p>75%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>Email: alameenofficial11@gmail.com</p>
+                <p>Phone: 7904610976</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/alameen11/" target="_blank" class="social-icon">
+                        <img src="./asserts/icons/linkedin-with-circle.svg" alt="">
+                    </a>
+                    <a href="https://github.com/AlAlmeen11" target="_blank" class="social-icon">
+                        <img src="./asserts/icons/github.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Al Ameen. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./portfolio.js"></script>
 </body>
 </html>
